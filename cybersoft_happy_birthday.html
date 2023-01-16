@@ -575,23 +575,26 @@
 
 <body>
 
-    <audio controls autoplay>
-        <source src="/happy_birthday//assets/piano_hpbd.mp3" type="audio/mp3">
+    <!-- <audio controls autoplay>
+        <source src="https://www.youtube.com/watch?v=apZ-FtdD4VE">
         Your browser does not support the audio element.
-    </audio>
+    </audio> -->
     <canvas id="canvas"></canvas>
     <div id="merrywrap" class="merrywrap">
         <div class="giftbox">
             <div class="cover">
-                <div></div>
+                <div>
+                </div>
             </div>
-            <div class="box"></div>
-        </div>
+            <div class="box">
 
+            </div>
+        </div>
     </div>
     <canvas id="c"></canvas>
     <div id="balloon-container">
     </div>
+
 
 
     <script>
@@ -1339,12 +1342,12 @@ animation: float ${dur}s ease-in infinite
             }
         }
 
-        // function removeBalloons() {
-        //     balloonContainer.style.opacity = 0;
-        //     setTimeout(() => {
-        //         balloonContainer.remove()
-        //     }, 500)
-        // }
+        function removeBalloons() {
+            balloonContainer.style.opacity = 0;
+            setTimeout(() => {
+                balloonContainer.remove()
+            }, 500)
+        }
 
         window.addEventListener("load", () => {
             createBalloons(30)
